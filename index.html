@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="calendar-div">
+      <div class="top-calendar-div">
+        <div class="div-for-search">
+          <div class="for-heading">
+            <div class="within-heading">
+              <h3>Insert Date</h3>
+            </div>
+          </div>
+          <form>
+            <input
+              type="integer"
+              class="fDate"
+              name="filterDare"
+              placeholder=" "
+            />
+          </form>
+        </div>
+        <div class="dates">
+          <div class="month">
+            <div class="prev-month">
+              <i class="fa fa-angle-left previousMonth"></i>
+              <i class="fa fa-angle-left previousMonth"></i>
+            </div>
+            <div class="month-year">
+              <div class="month-this" id="month-this"></div>
+              <div class="year-this" id="year-this"></div>
+            </div>
+            <div class="next-month">
+              <i class="fa fa-angle-right nextMonth"></i>
+              <i class="fa fa-angle-right nextMonth"></i>
+            </div>
+          </div>
+          <div class="days">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+          </div>
+          <div class="each-day" id="each-day"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

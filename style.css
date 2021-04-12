@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.div-for-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.div-for-search .fDate {
+  position: relative;
+  margin-left: 15%;
+  height: 100%;
+}
+
+.dates {
+  max-width: 500px;
+  margin-left: 35%;
+  border: 1px solid black;
+  margin-top: 2%;
+}
+
+.month {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  text-align: center;
+  padding: 6px;
+  border-bottom: 1px solid black;
+}
+
+.month-year {
+  display: flex;
+  justify-content: space-between;
+}
+
+.year-this {
+  margin-left: 5px;
+}
+
+.month-this {
+  margin-left: 30px;
+}
+
+.month .prev-month {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.month .next-month {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.days {
+  display: flex;
+  padding: 7px 0px;
+}
+
+.days div {
+  display: flex;
+  width: 14.28%;
+  justify-content: center;
+}
+
+.each-day {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid black;
+}
+
+.each-day div {
+  display: flex;
+  width: 14.28%;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.each-day div:hover {
+  background-color: grey;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.today {
+  background-color: rgb(182, 161, 182);
+  border-radius: 2px;
+}
+
+.prev-month-date,
+.next-month-date {
+  color: grey;
+}
+
+.prev-month-date:hover,
+.next-month-date:hover {
+  color: black;
+}
