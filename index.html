@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
-  <body>
+  <body onload="renderData()">
     <div class="calendar-div">
       <div class="top-calendar-div">
         <div class="div-for-search">
@@ -24,24 +24,39 @@
             <input
               type="integer"
               class="fDate"
+              id="fDate"
               name="filterDare"
               placeholder=" "
             />
           </form>
         </div>
+        <div id="demo" class="demo"></div>
+
         <div class="dates">
           <div class="month">
             <div class="prev-month">
-              <i class="fa fa-angle-left previousMonth"></i>
-              <i class="fa fa-angle-left previousMonth"></i>
+              <i
+                class="fa fa-angle-left previousMonth"
+                onclick="lastMonth('previous')"
+              ></i>
+              <i
+                class="fa fa-angle-left previousMonth"
+                onclick="lastMonth('previous')"
+              ></i>
             </div>
-            <div class="month-year">
+            <div class="month-year" id="month-year">
               <div class="month-this" id="month-this"></div>
               <div class="year-this" id="year-this"></div>
             </div>
             <div class="next-month">
-              <i class="fa fa-angle-right nextMonth"></i>
-              <i class="fa fa-angle-right nextMonth"></i>
+              <i
+                class="fa fa-angle-right nextMonth"
+                onclick="lastMonth('next')"
+              ></i>
+              <i
+                class="fa fa-angle-right nextMonth"
+                onclick="lastMonth('next')"
+              ></i>
             </div>
           </div>
           <div class="days">

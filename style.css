@@ -23,7 +23,7 @@ body {
   max-width: 500px;
   margin-left: 35%;
   border: 1px solid black;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .month {
@@ -37,15 +37,12 @@ body {
 
 .month-year {
   display: flex;
-  justify-content: space-between;
+  width: 200px;
+  justify-content: center;
 }
 
 .year-this {
   margin-left: 5px;
-}
-
-.month-this {
-  margin-left: 30px;
 }
 
 .month .prev-month {
@@ -58,6 +55,10 @@ body {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+}
+
+.top-calendar-div {
+  position: relative;
 }
 
 .days {
@@ -103,4 +104,19 @@ body {
 .prev-month-date:hover,
 .next-month-date:hover {
   color: black;
+}
+
+.demo {
+  display: flex;
+  position: absolute;
+  min-width: 170px;
+  left: 49%;
+  border: 1px solid black;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.within-heading .second {
+  display: flex;
+  justify-content: center;
 }
